@@ -1,0 +1,35 @@
+{
+    "name": "lym125/laravel-sendcloud",
+    "description": "Laravel SendCloud 邮件驱动",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "李静",
+            "email": "lym125@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "guzzlehttp/guzzle": "^6.3|^7.0.1",
+        "illuminate/mail": "^7.0|^8.0",
+        "illuminate/support": "^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lym125\\SendCloud\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lym125\\SendCloud\\ServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
